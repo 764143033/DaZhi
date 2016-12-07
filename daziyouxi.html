@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--引入css-->
+    <link rel="stylesheet" href="animate.css">
+    <!--引入js文件-->
+    <!--source 存储地址-->
+    <script src="dazi.js"></script>
+    <meta charset="UTF-8">
+    <title>打字</title>
+
+    <style>
+        main{
+            width: 500px;
+            height: 500px;
+            background-color: white;
+
+            border: solid 4px black;
+            border-radius: 250px;
+            margin: auto;
+
+        }
+
+        div{
+            font-size: 350px;
+            /*设置对齐方式*/
+            text-align:center;
+        }
+    </style>
+</head>
+<!--body用来监听键盘事件 如果键盘事件被触发了 -->
+<body onkeyup="jianpan(event);">
+    <main>
+    <div id="char"></div>
+    </main>
+    <!--页脚-->
+    <footer id="result"></footer>
+    <script>
+        showChar();
+    </script>
+</body>
+</html>
